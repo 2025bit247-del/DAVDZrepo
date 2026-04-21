@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - Mbarara Connect</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #34495e;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f1c40f;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px lightgray;
+        }
+
+        .form-container p {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #1a252f;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>Contact & Booking</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Explore</a>
+    <a href="data.html">Data</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+    <div class="form-container">
+
+        <p>
+        Contact us to book experiences, find local services, or get assistance exploring Mbarara.
+        </p>
+
+        <form action="mailto:mutegyekidavid0@gmail.com" method="post" enctype="text/plain">
+
+            <label>Name:</label>
+            <input type="text" name="name" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <label>Phone:</label>
+            <input type="tel" name="phone">
+
+            <label>Message:</label>
+            <textarea name="message" placeholder="Ask about tours, bookings, or services..."></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Mbarara Connect</p>
+</footer>
+
+</body>
+</html>

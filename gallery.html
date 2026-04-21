@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Explore Mbarara</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6f9;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #34495e;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f1c40f;
+        }
+
+        main {
+            padding: 30px 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .intro {
+            background-color: white;
+            padding: 20px;
+            width: 700px;
+            max-width: 95%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px lightgray;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        /* GALLERY GRID */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 900px;
+            max-width: 95%;
+        }
+
+        figure {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px lightgray;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        figure img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        figcaption {
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        /* VIDEO CARD */
+        .video-card {
+            margin-top: 25px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px lightgray;
+            width: 500px;
+            max-width: 95%;
+            text-align: center;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>Explore Mbarara</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Explore</a>
+    <a href="data.html">Data</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+
+    <div class="intro">
+        <p>Discover the beauty and culture of Mbarara through these highlights:</p>
+    </div>
+
+    <!-- IMAGE GALLERY -->
+    <div class="gallery">
+
+        <figure>
+            <img src="mbulo1.jpg" alt="Lake Mburo National Park">
+            <figcaption>Lake Mburo National Park</figcaption>
+        </figure>
+
+        <figure>
+            <img src="igongo.jpg" alt="Igongo Cultural Centre">
+            <figcaption>Igongo Cultural Centre</figcaption>
+        </figure>
+
+        <figure>
+            <img src="cow.jpg" alt="Ankole cattle">
+            <figcaption>Ankole Long-Horned Cattle</figcaption>
+        </figure>
+
+    </div>
+
+    <!-- VIDEO -->
+    <div class="video-card">
+        <video controls>
+            <source src="append.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</main>
+
+<footer>
+    <p>Explore More with Mbarara Connect</p>
+</footer>
+
+</body>
+</html>
